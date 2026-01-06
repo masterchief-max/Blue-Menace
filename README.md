@@ -1,2 +1,3 @@
-# Chaser-cpp-c-
+# Blue Menace
 A basic circle chasing game which is the port of my first repo which was originally made in python. This repo can be used by people looking to learn c++ the fun way and rewarding way.
+This project / repo may contain bugs and imporovements and features are always welcomed.
