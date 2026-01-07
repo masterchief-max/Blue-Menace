@@ -19,7 +19,7 @@ bool collision(float posx, float posy, float posx1 , float posy1)
    float dx = posx - posx1; // calculates distance on x axis 
    float dy = posy - posy1; // calculates distance on y axis
    float distance = std::sqrt(dy*dy + dx*dx); // caculates direct distance between the two circle centers
-   if(distance <= 80){return true;} // checks that if the direct distance exceeds the sum of the two circles bam collision !!
+   if(distance <= radius + radius1){return true;} // checks that if the direct distance exceeds the sum of the two circles bam collision !!
    else{return false;}
 }
 int main()
@@ -95,4 +95,5 @@ int main()
         
         EndDrawing(); // ends drawing just like everything has to come to an end ex - end of windows 7 
     }
+
 }
