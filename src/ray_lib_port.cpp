@@ -14,7 +14,7 @@
 const int width = 800;
 const int height = 800;
 // fuctions that calculates the collision between two circles by useing pythagoures theroum
-bool collision(float posx, float posy, float posx1 , float posy1)
+bool collision(float posx, float posy, float posx1 , float posy1,float radius,float radius1)
 {
    float dx = posx - posx1; // calculates distance on x axis 
    float dy = posy - posy1; // calculates distance on y axis
@@ -44,7 +44,7 @@ int main()
     start_time = GetTime(); // gets the time at the start of the game for score and if your cuerious brain asks me why dont do this at the time of iniziation becuase you can't use any raylib fuctions till calling the init than after you can use it 
     while(! WindowShouldClose())
     {
-        is_collided = collision(posx,posy,posx1,posy1); // puts the result of the fuctions in a bool variable
+        is_collided = collision(posx,posy,posx1,posy1,radius,radius1); // puts the result of the fuctions in a bool variable
         
         BeginDrawing(); // starts drawing (note: this is essential to draw anything)
         if(is_collided == true) // this block of code check if the circles have collided or not 
@@ -95,4 +95,5 @@ int main()
         
         EndDrawing(); // ends drawing just like everything has to come to an end ex - end of windows 7 
     }
+
 }
